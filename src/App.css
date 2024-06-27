@@ -62,7 +62,7 @@
 
 .date{
   width: 122px;
-  height: 102px;
+  height: 78px;
   border: solid;
   border-width: 3px;
   border-color: rgb(143, 252, 143);
@@ -78,4 +78,20 @@
 }
 .date:focus{
   background-color: rgb(181, 209, 173);
+}
+
+#daysOfWeek{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  top: 7px;
+}
+
+#dayName{
+  font-size: 30px;
+  color: white;
+  flex: 1 1 0px;
+  text-align: center;
 }
