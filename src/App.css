@@ -1,0 +1,81 @@
+#calendarBackground{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(143, 252, 143);;
+  border: solid rgb(143, 252, 143);
+  border-top-left-radius: 40px; 
+  border-top-right-radius: 40px; 
+  border-width: 10px;
+  width: 850px;
+  height: 600px;
+}
+
+#topCalendar{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;  
+  background-color: rgb(181, 209, 173);
+  border-top-left-radius: 30px; 
+  border-top-right-radius: 30px; 
+  border-bottom-left-radius: 7px; 
+  border-bottom-right-radius: 7px; 
+  height: 40px
+}
+
+#leftArrow, #rightArrow{
+  height: 60px;
+  width: 60px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 55px;
+}
+
+#leftArrow:hover, #rightArrow:hover{
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+}
+
+#monthText{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#bottomCalendar{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+}
+
+#rowCalendar{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date{
+  width: 122px;
+  height: 102px;
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(143, 252, 143);
+  background-color: white;
+  color: rgb(122, 122, 122);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.date:hover{
+  cursor: pointer;
+  background-color: rgb(226, 255, 226);
+}
+.date:focus{
+  background-color: rgb(181, 209, 173);
+}
