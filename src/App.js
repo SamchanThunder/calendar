@@ -26,6 +26,10 @@ function App() {
     }
   }
 
+  function whatDayIsIt(x,y){
+    alert("That is " + months[currentMonth] + " " + daysOfMonth[x][y] + ", " + currentYear);  
+  }
+
   function changeDays() {
     let tempDate = new Date(currentYear, currentMonth, 1);
     let daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
@@ -80,7 +84,7 @@ function App() {
       <div key={weekIndex} id="bottomCalendar">
         <div id="rowCalendar">
           {rowArray.map((dayIndex) => (
-            <button key={dayIndex} className="date">{daysOfMonth[weekIndex][dayIndex]}</button>
+            <button key={dayIndex}  onClick={() => whatDayIsIt(weekIndex, dayIndex)} className="date">{daysOfMonth[weekIndex][dayIndex]}</button>
           ))}
         </div>
       </div>
