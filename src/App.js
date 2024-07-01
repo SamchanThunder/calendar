@@ -66,6 +66,8 @@ function App() {
   function changeColor(week,day){
     if(daysOfMonth[week][day] == null || daysOfMonth[week][day] == ""){
       return "noDate";
+    }else if(currentDate.getMonth() === currentMonth && currentDate.getFullYear() === currentYear && currentDate.getDate() === daysOfMonth[week][day]){
+      return "currentDate";
     }else{
       return "date";
     }

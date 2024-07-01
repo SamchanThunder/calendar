@@ -80,6 +80,25 @@
   background-color: rgb(181, 209, 173);
 }
 
+.currentDate{
+  width: 122px;
+  height: 78px;
+  border: solid;
+  border-width: 5px;
+  border-color: rgb(70, 141, 56);
+  background-color: white;
+  color: rgb(103, 187, 92);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.currentDate:hover{
+  cursor: pointer;
+  background-color: rgb(226, 255, 226);
+}
+.currentDate:focus{
+  background-color: rgb(181, 209, 173);
+}
 
 .noDate{
   width: 122px;
