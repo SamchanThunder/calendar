@@ -27,7 +27,9 @@ function App() {
   }
 
   function whatDayIsIt(x,y){
-    alert("That is " + months[currentMonth] + " " + daysOfMonth[x][y] + ", " + currentYear);  
+    if(daysOfMonth[x][y] != null  && daysOfMonth[x][y] !== ""){
+      alert("That is " + months[currentMonth] + " " + daysOfMonth[x][y] + ", " + currentYear);  
+    }
   }
 
   function changeDays() {
@@ -64,7 +66,7 @@ function App() {
   }  
   
   function changeColor(week,day){
-    if(daysOfMonth[week][day] == null || daysOfMonth[week][day] == ""){
+    if(daysOfMonth[week][day] == null || daysOfMonth[week][day] === ""){
       return "noDate";
     }else if(currentDate.getMonth() === currentMonth && currentDate.getFullYear() === currentYear && currentDate.getDate() === daysOfMonth[week][day]){
       return "currentDate";
