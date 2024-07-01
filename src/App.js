@@ -63,7 +63,13 @@ function App() {
     setDaysOfMonth(finalArray);
   }  
   
-
+  function changeColor(week,day){
+    if(daysOfMonth[week][day] == null || daysOfMonth[week][day] == ""){
+      return "noDate";
+    }else{
+      return "date";
+    }
+  }
   return (
     <div id="calendarBackground">
     <div id="topCalendar">
@@ -84,7 +90,7 @@ function App() {
       <div key={weekIndex} id="bottomCalendar">
         <div id="rowCalendar">
           {rowArray.map((dayIndex) => (
-            <button key={dayIndex}  onClick={() => whatDayIsIt(weekIndex, dayIndex)} className="date">{daysOfMonth[weekIndex][dayIndex]}</button>
+            <button key={dayIndex}  onClick={() => whatDayIsIt(weekIndex, dayIndex)} className={ changeColor(weekIndex, dayIndex)}>{daysOfMonth[weekIndex][dayIndex]}</button>
           ))}
         </div>
       </div>
