@@ -6,7 +6,7 @@
 
   1. Most of the times, all the days of the month can be shown on a calendar using 5 columns. However, sometimes there needs to be 6 columns to display all the days. This calendar adjusts between 5 or 6 columns depending on how many columns the month needs.
 
-  2. Instead of having empty boxes for the days on the calendar which are not part of the month, those boxes show what day it would be for the month before or after the current month.
+  2. Instead of having empty boxes for the days on the calendar which are not part of the current month, those boxes show what day it would be for the month before or after the current month.
 
   3. To show that each day (button) could have its own respective function, if you click on a day, it will tell you what day, month, and year you have clicked on.
 
