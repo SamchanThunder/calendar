@@ -80,8 +80,6 @@ function App() {
     while (finalArray.length < 6) {
       finalArray.push(new Array(7).fill(""));
     }
-  
-    setDaysOfMonth(finalArray);
 
     let empty = true;
     for (var x of finalArray[5]) {
